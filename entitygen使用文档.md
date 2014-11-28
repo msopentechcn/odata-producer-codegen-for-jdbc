@@ -1,15 +1,14 @@
-¼ò½é:olingo-odata-jpa-entitygen ÊÇ×Ô¶¯Éú³Éjpa Entity´úÂëµÄ¹¤¾ß.Ê¹ÓÃÒÀÀµ»·¾³jpa-api/jpa-core/sql-driver.µ±ÎÒÃÇÊ¹ÓÃolingo2-odata2-jpa2À´ÊµÏÖodata2±©Â¶µÄÊ±ºò,ĞèÒª
-ÊÖ¶¯´´½¨ºÍÊı¾İ¿â±í¶ÔÓ¦µÄEntity,Èç¹ûÊı¾İ¿âÖĞÓĞÉÏ°ÙÕÅ±í,ÄÇÎÒÃÇÊ¹ÓÃolingo-odata-jpa-entitygenÀ´ÊµÏÖ×Ô¶¯´´½¨Entity¾ÍºÜ·½±ãÁË.
+ç®€ä»‹:olingo-odata-jpa-entitygen æ˜¯è‡ªåŠ¨ç”ŸæˆjpaEntityä»£ç çš„å·¥å…·.ä½¿ç”¨ä¾èµ–ç¯å¢ƒjpa-api/jpa-core/sql-driver.å½“æˆ‘ä»¬ä½¿ç”¨olingo2-odat2-jpa2æ¥å®ç°odata2æš´éœ²çš„æ—¶å€™,éœ€è¦æ‰‹åŠ¨åˆ›å»ºå’Œæ•°æ®åº“è¡¨å¯¹åº”çš„Entity,å¦‚æœæ•°æ®åº“ä¸­æœ‰ä¸Šç™¾å¼ è¡¨,é‚£æˆ‘ä»¬ä½¿ç”¨olingo-odata-jpa-entitygenæ¥å®ç°è‡ªåŠ¨åˆ›å»ºEntityå°±å¾ˆæ–¹ä¾¿äº†.
 
-Ê¹ÓÃ²½Öè:
-   Ò»:´´½¨Ò»¸ö¾ßÓĞolingo2-odata2-jpa2»·¾³µÄÓ¦ÓÃ
+ä½¿ç”¨æ­¥éª¤:
+   ä¸€:åˆ›å»ºä¸€ä¸ªå…·æœ‰olingo2-odata2-jpa2ç¯å¢ƒçš„åº”ç”¨
 
-   ¶ş:½«olingo-odata-jpa-entitygen.jar¼Ü°ü¿¼µ½¹¤³ÌµÄclassPathÖĞ.
+   äºŒ:å°†olingo-odata-jpa-entitygen.jaræ¶åŒ…è€ƒåˆ°å·¥ç¨‹çš„classPathä¸­.
 
-   Èı:ÅäÖÃtomcatÆô¶¯Ê±µÄCLASSPATH=H:\apache-tomcat-7.0.52\webapps\TokyoSubway\WEB-INF\lib\*.jar(ÒòÎªÓ¦ÓÃÊÇÔÚÔËĞĞÊ±±àÒëEntityµÄ,ËùÒÔCLASSPATHÊÇÒÀÀµÓ¦ÓÃµÄlib,TokyoSubwayÊÇ¹¤³ÌÃû)
+   ä¸‰:é…ç½®tomcatå¯åŠ¨æ—¶çš„CLASSPATH=H:\apache-tomcat-7.0.52\webapps\TokyoSubway\WEB-INF\lib\*.jar(å› ä¸ºåº”ç”¨æ˜¯åœ¨è¿è¡Œæ—¶ç¼–è¯‘Entity       çš„,æ‰€ä»¥CLASSPATHæ˜¯ä¾èµ–åº”ç”¨çš„lib,TokyoSubwayæ˜¯å·¥ç¨‹å)
 
 
-   ËÄ:ÅäÖÃweb.xml
+   å››:é…ç½®web.xml
        <servlet>
              <servlet-name>EntityServlet</servlet-name>
              <servlet-class>olingo.odata.jpa.entitygen.servlet.EntityServlet</servlet-class>
@@ -28,51 +27,51 @@
              <url-pattern>/EntityServlet/*</url-pattern>
        </servlet-mapping>
 
-       EntityServletÊÇ×Ô¶¯Éú³ÉEntityµÄÈë¿Ú.
-       persistence.UnitName²ÎÊıÊÇpersistence.xmlÅäÖÃÖĞÊ¹ÓÃµÄUnitName.
-       persistence.ClassPath²ÎÊıÊÇpersistence.xmlµÄÂ·¾¶¼°Ãû³Æ,Ä¬ÈÏÊÇ±£´æÔÚMETA-INF/persistence.xml(Èç¹ûÊÇÄ¬ÈÏµÄÂ·¾¶ºÍÃû³ÆµÄ»°,¿ÉÒÔ²»ÓÃÖ¸¶¨¸Ã²ÎÊı).
+       EntityServletæ˜¯è‡ªåŠ¨ç”ŸæˆEntityçš„å…¥å£.
+       persistence.UnitNameå‚æ•°æ˜¯persistence.xmlé…ç½®ä¸­ä½¿ç”¨çš„UnitName.
+       persistence.ClassPathå‚æ•°æ˜¯persistence.xmlçš„è·¯å¾„åŠåç§°,é»˜è®¤æ˜¯ä¿å­˜åœ¨META-INF/persistence.xml(å¦‚æœæ˜¯é»˜è®¤çš„è·¯å¾„å’Œåç§°çš„è¯        ,å¯ä»¥ä¸ç”¨æŒ‡å®šè¯¥å‚æ•°).
 
 
-     Îå:persistence.xmlÖĞpersistence-unitµÄÅäÖÃ
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?><persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+     äº”:persistence.xmlä¸­persistence-unitçš„é…ç½®
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?><persistence xmlns="http://java.sun.com/xml/ns/persistence"                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"                                xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <properties>  
+	  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+          <properties>  
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/TS"/>  
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
             <property name="javax.persistence.jdbc.user" value="root"/>  
             <property name="javax.persistence.jdbc.password" value="password"/>  
-        </properties> 	
+          </properties> 	
 	</persistence-unit>
         </persistence>
 
 
 
-Ê¹ÓÃsample¿ìËÙ´î½¨×Ô¼ºµÄolingo2-odata2-jpa2»·¾³
-    ²½Öè
-    1,½«Ó¦ÓÃTokyoSubwayµ¼ÈëÄúµÄIDE¹¤¾ßÖĞ
-    2,ĞŞ¸Äpersistence.xmlµÄÊı¾İ¿âÁ¬½Ó
-    3,ÅäÖÃtomcatÆô¶¯ÊÇµÄCLASSPATH=H:\apache-tomcat-7.0.52\webapps\TokyoSubway\WEB-INF\lib\*.jar;  (Ö¸ÏòÓ¦ÓÃ²¿ÊğÊ±µÄlibËùÓĞjarÎÄ¼ş)
+ä½¿ç”¨sampleå¿«é€Ÿæ­å»ºè‡ªå·±çš„olingo2-odata2-jpa2ç¯å¢ƒ
+    æ­¥éª¤
+    1,å°†åº”ç”¨TokyoSubwayå¯¼å…¥æ‚¨çš„IDEå·¥å…·ä¸­
+    2,ä¿®æ”¹persistence.xmlçš„æ•°æ®åº“è¿æ¥
+    3,é…ç½®tomcatå¯åŠ¨æ˜¯çš„CLASSPATH=H:\apache-tomcat-7.0.52\webapps\TokyoSubway\WEB-INF\lib\*.jar;  (æŒ‡å‘åº”ç”¨éƒ¨ç½²æ—¶çš„libæ‰€æœ‰jaræ–‡ä»¶)
     4,startup server
-    5,http://localhost:8080/TokyoSubway/EntityServlet   Ö´ĞĞ×Ô¶¯Éú³ÉEntity³ÌĞòÈë¿Ú
-    6,µÈÕıÈ··µ»Ø:
+    5,http://localhost:8080/TokyoSubway/EntityServlet   æ‰§è¡Œè‡ªåŠ¨ç”ŸæˆEntityç¨‹åºå…¥å£
+    6,ç­‰æ­£ç¡®è¿”å›:
         STATE:OK
         Application[/TokyoSubway] auto create entity is successed.Please manually restart the application!
     7,restart server
-    8,http://localhost:8080/TokyoSubway/OdataServlet.cn    ÕâÑùÊı¾İ¿âÖĞµÄËùÓĞ±íµÄÊı¾İ¶¼¿ÉÒÔ±©Â¶³öÀ´ÁË.
+    8,http://localhost:8080/TokyoSubway/OdataServlet.cn    è¿™æ ·æ•°æ®åº“ä¸­çš„æ‰€æœ‰è¡¨çš„æ•°æ®éƒ½å¯ä»¥æš´éœ²å‡ºæ¥äº†.
 
 
 
 
-Èç¹ûÄúÖ»Ïë±©Â¶Êı¾İ¿âÖĞµÄ²¿·ÖÊı¾İ
-    ÊµÏÖ²½Öè
-    1,ÔÚÄúµÄÊı¾İ¿âÖĞ´´½¨Ò»¸öÃûÎªOling_Odata_JPA_ExposeTableµÄ±í
+å¦‚æœæ‚¨åªæƒ³æš´éœ²æ•°æ®åº“ä¸­çš„éƒ¨åˆ†æ•°æ®
+    å®ç°æ­¥éª¤
+    1,åœ¨æ‚¨çš„æ•°æ®åº“ä¸­åˆ›å»ºä¸€ä¸ªåä¸ºOling_Odata_JPA_ExposeTableçš„è¡¨
       drop table if exists Oling_Odata_JPA_ExposeTable;
       create table Oling_Odata_JPA_ExposeTable(
-        ExposeTableName varchar(50) primary key        #ĞèÒª±©Â¶µÄ±íÃû
+        ExposeTableName varchar(50) primary key        #éœ€è¦æš´éœ²çš„è¡¨å
       );
 
-    ÕâÑùolingo-odata-jpa-entitygen¾ÍÄÜÊ¶±ğ²¢Éú³ÉExposeTableName¶ÔÓ¦µÄEntity
-    Èç¹ûÊı¾İ¿âÖĞÃ»ÓĞOling_Odata_JPA_ExposeTable»òÕßÁĞ³¤¶ÈÎª0µÄolingo-odata-jpa-entitygen¶¼Ä¬ÈÏÊÇ±©Â¶È«²¿Êı¾İ¿âµÄ.
+    è¿™æ ·olingo-odata-jpa-entitygenå°±èƒ½è¯†åˆ«å¹¶ç”ŸæˆExposeTableNameå¯¹åº”çš„Entity
+    å¦‚æœæ•°æ®åº“ä¸­æ²¡æœ‰Oling_Odata_JPA_ExposeTableæˆ–è€…åˆ—é•¿åº¦ä¸º0çš„olingo-odata-jpa-entitygenéƒ½é»˜è®¤æ˜¯æš´éœ²å…¨éƒ¨æ•°æ®åº“çš„.
 
 
