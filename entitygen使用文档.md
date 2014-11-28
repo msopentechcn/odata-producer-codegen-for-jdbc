@@ -27,9 +27,13 @@
              <url-pattern>/EntityServlet/*</url-pattern>
        </servlet-mapping>
 
+
+
        EntityServlet是自动生成Entity的入口.
        persistence.UnitName参数是persistence.xml配置中使用的UnitName.
        persistence.ClassPath参数是persistence.xml的路径及名称,默认是保存在META-INF/persistence.xml(如果是默认的路径和名称的话        ,可以不用指定该参数).
+
+
 
 
      五:persistence.xml中persistence-unit的配置
@@ -66,12 +70,14 @@
 如果您只想暴露数据库中的部分数据
     实现步骤
     1,在您的数据库中创建一个名为Oling_Odata_JPA_ExposeTable的表
+    
       drop table if exists Oling_Odata_JPA_ExposeTable;
       create table Oling_Odata_JPA_ExposeTable(
-        ExposeTableName varchar(50) primary key        #需要暴露的表名
+        ExposeTableName varchar(50) primary key
       );
 
-    这样olingo-odata-jpa-entitygen就能识别并生成ExposeTableName对应的Entity
-    如果数据库中没有Oling_Odata_JPA_ExposeTable或者列长度为0的olingo-odata-jpa-entitygen都默认是暴露全部数据库的.
+
+这样olingo-odata-jpa-entitygen就能识别并生成ExposeTableName对应的Entity
+如果数据库中没有Oling_Odata_JPA_ExposeTable或者列长度为0的olingo-odata-jpa-entitygen都默认是暴露全部数据库的.
 
 
