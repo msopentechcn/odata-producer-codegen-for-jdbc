@@ -53,7 +53,7 @@
 
 
 ##使用sample快速搭建自己的olingo2-odata2-jpa2环境##
-    步骤
+#####步骤:#####
 #####1,将应用TokyoSubway导入您的IDE工具中#####
 #####2,修改persistence.xml的数据库连接#####
 #####3,配置tomcat启动是的CLASSPATH=H:\apache-tomcat-7.0.52\webapps\TokyoSubway\WEB-INF\lib\*.jar;  (指向应用部署时的lib所有jar文件)#####
@@ -68,7 +68,7 @@
 
 
 ####如果您只想暴露数据库中的部分数据####
-    实现步骤
+    实现步骤:
     1,在您的数据库中创建一个名为Oling_Odata_JPA_ExposeTable的表
     
       drop table if exists Oling_Odata_JPA_ExposeTable;
