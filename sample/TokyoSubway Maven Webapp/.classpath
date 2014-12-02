@@ -25,5 +25,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java"/>
 	<classpathentry kind="lib" path="src/main/webapp/lib/olingo-odata-jpa-entitygen.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/olingo-odata-jpa-entitygen.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

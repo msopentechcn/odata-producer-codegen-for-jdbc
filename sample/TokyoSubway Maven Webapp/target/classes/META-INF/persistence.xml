@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>olingo.odata.jpa.entitys.Ts_dispenser</class>
-		<class>olingo.odata.jpa.entitys.Ts_dispenserhistory</class>
-		<class>olingo.odata.jpa.entitys.Ts_elevator</class>
-		<class>olingo.odata.jpa.entitys.Ts_elevatorhistory</class>
-		<class>olingo.odata.jpa.entitys.Ts_escalator</class>
-		<class>olingo.odata.jpa.entitys.Ts_escalatorhistory</class>
-		<class>olingo.odata.jpa.entitys.Ts_gate</class>
-		<class>olingo.odata.jpa.entitys.Ts_gatehistory</class>
-		<class>olingo.odata.jpa.entitys.Ts_line</class>
-		<class>olingo.odata.jpa.entitys.Ts_station</class>
-		<class>olingo.odata.jpa.entitys.Ts_station_line</class>
-		<class>olingo.odata.jpa.entitys.Ts_totalpassengerhistory</class>
         <properties>  
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/TS"/>  
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
