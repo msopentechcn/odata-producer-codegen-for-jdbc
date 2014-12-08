@@ -2,7 +2,7 @@
 	<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <properties>  
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/TS"/>  
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/TS?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>  
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
             <property name="javax.persistence.jdbc.user" value="root"/>  
             <property name="javax.persistence.jdbc.password" value="sorry"/>  
