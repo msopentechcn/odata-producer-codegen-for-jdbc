@@ -14,23 +14,26 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
-  <servlet>
-    <servlet-name>EntityServlet</servlet-name>
-    <servlet-class>olingo.odata.jpa.entitygen.servlet.EntityServlet</servlet-class>
+<servlet>
+    <servlet-name>jpaEntitygenController</servlet-name>
+    <servlet-class>ms.open.technologies.jpa.entitygen.controller.JpaEntitygenController</servlet-class>
     <init-param>
       <param-name>persistence.UnitName</param-name>
       <param-value>odata2_jpa2</param-value>
     </init-param>
   </servlet>
 
+
+
   <servlet-mapping>
     <servlet-name>SemServiceServlet</servlet-name>
     <url-pattern>/OdataServlet.cn/*</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>EntityServlet</servlet-name>
-    <url-pattern>/EntityServlet/*</url-pattern>
+ <servlet-mapping>
+    <servlet-name>jpaEntitygenController</servlet-name>
+    <url-pattern>/jpaEntitygenController/*</url-pattern>
   </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

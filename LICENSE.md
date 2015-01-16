@@ -1,1 +1,0 @@
-olingo-odata-jpa-entitygen 是自动生成jpaEntity代码的工具.使用依赖环境jpa-api/jpa-core/sql-driver.当我们使用olingo2-odat2-jpa2来实现odata2暴露的时候,需要手动创建和数据库表对应的Entity,如果数据库中有上百张表,那我们使用olingo-odata-jpa-entitygen来实现自动创建Entity就很方便了.
