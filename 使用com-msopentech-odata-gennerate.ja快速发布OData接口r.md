@@ -6,7 +6,7 @@
 ###一:下载 sample/ODataV2GenerateSample实例项目到本地工作空间###
 ![](/img/down-sample.png)
 
-###二:配置tomcat启动时的CLASSPATH=H:\apache-tomcat-7.0.52\webapps\ODataV2GenerateSample\WEB-INF\lib\*.jar(因为应用在运行的时候会编译生成的源码,所以来的架包为:javax.persistence-2.1.0.jar.所以将CLASSPATH环境指向应用的lib\*.jar是最直接的方法)###
+###二:配置tomcat启动时的CLASSPATH=H:\apache-tomcat-7.0.52\webapps\ODataV2GenerateSample\WEB-INF\lib\ *.jar(因为应用在运行的时候会编译生成的源码,所依赖的架包为:javax.persistence-2.1.0.jar.所以将CLASSPATH环境指向应用的lib\ *.jar是最直接的方法)###
 在windows环境下修改catalina.bat文件:
 ![](/img/catalina-bat.png)
 
