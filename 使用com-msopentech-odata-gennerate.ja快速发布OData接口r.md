@@ -32,9 +32,11 @@
 ![](/img/deploy.png)
 
 ###五:请求OData generate 控制台:[http://localhost:8080/ODataV2GenerateSample/oDataGenerateInterceptor](http://localhost:8080/ODataV2GenerateSample/oDataGenerateInterceptor)###
+
 ![](/img/interceptor.png)
 
 将需要暴露的表移到右边列表中:
+
 ![](/img/right-table.png)
 
 点击"GENERATE"按钮开始生成,如果成功返回:
