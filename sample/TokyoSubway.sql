@@ -1,7 +1,7 @@
 #Tokyo Subway databae
-drop database if exists TS;
-create database TS character set utf8;
-use TS;
+drop database if exists TEST;
+create database TEST character set utf8;
+use TEST;
 
 #Station
 drop table if exists TS_Station;
@@ -28,11 +28,3 @@ create table TS_Line(
 ); 
 insert into TS_Line values('dd52c72f-6068-4df5-9860-8576cdf878df',1,'One num line',now(),0,now());
 
-
-
-#Oling_Odata_JPA_ExposeTable
-drop table if exists Oling_Odata_JPA_ExposeTable;
-create table Oling_Odata_JPA_ExposeTable(
-    ExposeTableName varchar(50) primary key     
-);
-insert into Oling_Odata_JPA_ExposeTable values('TS_Station');
