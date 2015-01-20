@@ -14,7 +14,7 @@ odata2-codegen能帮助我们快速的将数据库以ODatav2协议暴露出去.
     git clone https://github.com/msopentechcn/odata-producer-codegen-for-jdbc.git
 
 将工程odata2-codegen导入到IDE工具里,等待maven自动构建完成.
-1[](/img/maven.png)
+![](/img/maven.png)
 
 ###配置META-INF/persistence.xml连接数据库###
 以mysql为列
