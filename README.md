@@ -11,7 +11,7 @@ odata2-codegen能帮助我们快速的将数据库以ODatav2协议暴露出去.
 ###克隆和构建:###
 克隆这个仓库到本地
 
-    '''git clone https://github.com/msopentechcn/odata-producer-codegen-for-jdbc.git'''
+    git clone https://github.com/msopentechcn/odata-producer-codegen-for-jdbc.git
 
 将工程odata2-codegen导入到IDE工具里,等待maven自动构建完成.
 1[](/img/maven.png)
