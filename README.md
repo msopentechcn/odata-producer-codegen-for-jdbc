@@ -35,6 +35,7 @@ odata2-codegen能帮助我们快速的将数据库以ODatav2协议暴露出去.
 
 ###部署###
 将odata2-codegen部署tomcat服务器中
+
 ![](/img/deploy.png)
 
 ###进入控制台###
@@ -47,12 +48,14 @@ odata2-codegen 控制台:[http://localhost:8080/odata2-codegen/oDataGenerateInte
 ![](/img/right-table.png)
 
 点击"GENERATE"按钮开始生成,如果成功返回:
+
 ![](/img/status-ok.png)
 
 按提示重启tomcat
 
 ###OData入口###
 重启tomcat后,请求OData入口:[http://localhost:8080/odata2-codegen/OdataServlet.cn](http://localhost:8080/odata2-codegen/OdataServlet.cn)
+
 ![](/img/odata-servlet.png)
 
 
