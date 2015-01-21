@@ -13,7 +13,7 @@ OData Producer Codegen for JDBC能够快速的将基于JDBC协议的数据源发
 
     git clone https://github.com/msopentechcn/odata-producer-codegen-for-jdbc.git
 
-将Maven工程odata-codegen导入到Java IDE,执行Maven构建任务：
+将Maven工程odata2-codegen导入到Java IDE,执行Maven构建任务：
 
 ![](/img/maven.png)
 
@@ -27,16 +27,18 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 修改resources/META-INF/persistence.xml,配置JDBC连接信息:
 
 	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-	<persistence xmlns="http://java.sun.com/xml/ns/persistence"        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.user" value="username"/>
-			<property name="javax.persistence.jdbc.password" value="password"/>
-		</properties>
-	</persistence-unit>
+	<persistence xmlns="http://java.sun.com/xml/ns/persistence"        
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" 	
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence  http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+		<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
+			<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+			<properties>
+				<property name="javax.persistence.jdbc.url"  value="jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>
+				<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+				<property name="javax.persistence.jdbc.user" value="username"/>
+				<property name="javax.persistence.jdbc.password" value="password"/>
+			</properties>
+		</persistence-unit>
 	</persistence>
 
 
