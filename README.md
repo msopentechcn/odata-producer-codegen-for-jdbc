@@ -51,7 +51,7 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 
 ![](/img/deploy.png)
 
-###发布OData数据服务###
+###<a name='id_1'></a>发布OData数据服务###
 进入odata-codegen发布页面:[http://localhost:8080/odata-codegen/admin](http://localhost:8080/odata-codegen/admin)
 
 ![](/img/interceptor.png)
@@ -71,3 +71,5 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 
 ![](/img/odata-servlet.png)
 
+###提示###
+如果数据库表结构有修改(如:修改原表中字段,添加删除表),需要重新重新[发布OData数据服务](#id_1)
