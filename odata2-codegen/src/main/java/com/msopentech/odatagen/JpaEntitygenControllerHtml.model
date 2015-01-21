@@ -26,9 +26,9 @@
 <div style="width:100%;">
 <table  align="center" width="285" height="169" border="0" cellpadding="0" cellspacing="0">
   <tr>
-     <td>No expose tables:</td>
+     <td>Unpublish tables:</td>
      <td></td>
-     <td>Expose tables:</td>
+     <td>Publish tables:</td>
   </tr>
   <tr>
     <td width="126">

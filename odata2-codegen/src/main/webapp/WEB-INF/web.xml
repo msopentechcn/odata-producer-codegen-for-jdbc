@@ -9,12 +9,12 @@
     </init-param>
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
-      <param-value>odata.service.factory.SemOdataJPAServiceFactory</param-value>
+      <param-value>com.msopentech.odatagen.odata.factory.OdataJPAServiceFactory</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
 <servlet>
-    <servlet-name>oDataGenerateInterceptor</servlet-name>
+    <servlet-name>admin</servlet-name>
     <servlet-class>com.msopentech.odatagen.servlet.interceptor.ODataGenerateInterceptor</servlet-class>
     <init-param>
       <param-name>persistence.UnitName</param-name>
@@ -26,10 +26,10 @@
 
   <servlet-mapping>
     <servlet-name>SemServiceServlet</servlet-name>
-    <url-pattern>/OdataServlet.cn/*</url-pattern>
+    <url-pattern>/OdataServlet.svc/*</url-pattern>
   </servlet-mapping>
  <servlet-mapping>
-    <servlet-name>oDataGenerateInterceptor</servlet-name>
-    <url-pattern>/oDataGenerateInterceptor/*</url-pattern>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
   </servlet-mapping>
 </web-app>
