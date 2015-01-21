@@ -2,7 +2,11 @@
 OData Producer Codegen for JDBC
 ---------------------------------------------------------
 
-OData Producer Codegen for JDBC能够快速的将基于JDBC协议的数据源发布为OData数据服务，目前支持生成OData v2版本。
+OData Producer Codegen for JDBC(以下简称odata-codegen)代码生成工具能够快速将基于JDBC协议的数据源批量转换为OData数据服务,用户能够通过OData标准客户端，如MS Office Excel快速获取数据并进行处理，分析和展现。
+
+此工具能够大幅度数据服务提供商进行数据接口发布的效率，通过简单配置后，能够通过一键点击自动批量地将存储在JDBC数据源中的数据添加符合OData标准的Restful API接口，从而使得海量数据迅速具备对外流通的能力。
+
+目前此工具支持OData v2版本。
 
 ###所需工具:###
 * [Apache Maven] (http://maven.apache.org/)
