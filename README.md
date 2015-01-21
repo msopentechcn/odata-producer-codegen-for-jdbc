@@ -1,5 +1,5 @@
 
-OData Producer Codegen for JDBC: 基于JDBC数据源的OData数据服务生成工具
+OData Producer Codegen for JDBC
 ---------------------------------------------------------
 
 OData Producer Codegen for JDBC能够快速的将基于JDBC协议的数据源发布为OData数据服务，目前支持生成OData v2版本。
@@ -21,20 +21,23 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 
 ###配置JDBC数据源###
 构建完成后，配置JDBC数据源，以MySQL数据库为例:
-- 将MySQL JDBC driver包拷贝到WEB-INF/lib/
-- 修改Persistence.xml,配置JDBC连接信息
 
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?><persistence xmlns="http://java.sun.com/xml/ns/persistence"                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"                                xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+将MySQL JDBC driver包拷贝到webapp/WEB-INF/lib/
+
+修改resources/META-INF/persistence.xml,配置JDBC连接信息:
+
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<persistence xmlns="http://java.sun.com/xml/ns/persistence"        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="odata2_jpa2" transaction-type="RESOURCE_LOCAL">
-	  <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-          <properties>  
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>  
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
-            <property name="javax.persistence.jdbc.user" value="username"/>  
-            <property name="javax.persistence.jdbc.password" value="password"/>  
-        </properties> 	
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/database?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.user" value="username"/>
+			<property name="javax.persistence.jdbc.password" value="password"/>
+		</properties>
 	</persistence-unit>
-        </persistence>
+	</persistence>
 
 
 ###部署到应用服务器###
