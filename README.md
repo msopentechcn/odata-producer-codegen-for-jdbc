@@ -17,7 +17,7 @@ OData Producer Codegen for JDBC(以下简称odata-codegen)工具能够快速将J
 
     git clone https://github.com/msopentechcn/odata-producer-codegen-for-jdbc.git
 
-将Maven工程odata2-codegen导入到Java IDE,执行Maven构建任务：
+将Maven工程odata-codegen导入到Java IDE,执行Maven构建任务：
 
 ![](/img/maven.png)
 
@@ -52,7 +52,7 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 ![](/img/deploy.png)
 
 ###发布OData数据服务###
-进入odata2-codegen发布页面:[http://localhost:8080/odata2-codegen/oDataGenerateInterceptor](http://localhost:8080/odata2-codegen/oDataGenerateInterceptor)
+进入odata-codegen发布页面:[http://localhost:8080/odata2-codegen/oDataGenerateInterceptor](http://localhost:8080/odata2-codegen/oDataGenerateInterceptor)
 
 ![](/img/interceptor.png)
 
