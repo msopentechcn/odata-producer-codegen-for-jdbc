@@ -52,7 +52,7 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 ![](/img/deploy.png)
 
 ###发布OData数据服务###
-进入odata-codegen发布页面:[http://localhost:8080/odata2-codegen/oDataGenerateInterceptor](http://localhost:8080/odata2-codegen/oDataGenerateInterceptor)
+进入odata-codegen发布页面:[http://localhost:8080/odata-codegen/admin](http://localhost:8080/odata-codegen/admin)
 
 ![](/img/interceptor.png)
 
@@ -67,7 +67,7 @@ Maven会自动下载所依赖的库文件，并构建目录结构。
 按提示重启tomcat
 
 ###开始访问OData数据服务###
-重启tomcat后,可通过以下入口访问OData数据服务:[http://localhost:8080/odata2-codegen/OdataServlet.cn](http://localhost:8080/odata2-codegen/OdataServlet.cn)
+重启tomcat后,可通过以下入口访问OData数据服务:[http://localhost:8080/odata-codegen/OdataServlet.svc](http://localhost:8080/odata-codegen/OdataServlet.svc)
 
 ![](/img/odata-servlet.png)
 
