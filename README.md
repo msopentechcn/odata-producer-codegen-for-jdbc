@@ -2,10 +2,10 @@
 OData Producer Codegen for JDBC
 ---------------------------------------------------------
 
-OData Producer Codegen for JDBC(odata-codegen) can rapidly convert JDBC-backend datasource into OData service in a batch and automaticall way. 
-which enable data service consumers to easily access data through standard OData client like MS Office Excel.
+OData Producer Codegen for JDBC(odata-codegen) can rapidly convert JDBC-backend datasource into OData service in a batch and automatical way. 
+which enable data service consumers to easily access data through standard OData clients like MS Office Excel.
 
-This tool can help to improve the productivity for data service providers. A
+This tool aims to improve the productivity for data service providers. A
 fter simple configuration and click one button, it will generate OData compliant Restful API,
 Which gains immediate data interoperability. 
 
