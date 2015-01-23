@@ -75,4 +75,4 @@ After restarting you application server,you can access OData service from:[http:
 ![](/img/odata-servlet.png)
 
 ###Note###
-re-publish[Publish OData Service](#id_1) is needed if database schema(create/remove table, change table definition) has been changed.
+If database schema has been changed, like new tables, delete tables, change column definitions, re-publish [Publish OData Service](#id_1) is needed.
